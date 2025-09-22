@@ -16,7 +16,7 @@ Example call: ./dict2 2 tests/dataset_1067.csv output.txt < tests/test1067.in > 
 2. answer queries about a look up for some keys in a feild, note you can query as many keys as you like for the one field that you specify and the keys you query doesn't have to be a valid key. If an invalid key is given, the program will find records associates with the key that has the least edit distance with your query
 
 Some commnon features:
-1. this program comtains both a patricia trie and a hashtable implementation, you need to uncomment the insert and search lines for the hashtable to use it in comparison with the patricia trie
+1. this program contains both a patricia trie and a hashtable implementation, you need to uncomment the insert and search lines for the hashtable to use it in comparison with the patricia trie
 2. to change the index of the field to are querying (default is index 0), change the value at line 26 where an index of 0 corresponds to the first field in a record etc.
 3. the output of the program is quite self explanatory and contains the comparison counts for each of your query: b16 n16 s16 means this query takes 16 bit comparison, 16 node comparison and 16 string comparison
 
